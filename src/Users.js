@@ -11,9 +11,7 @@ componentDidMount(){
     }
 }
     
-   
-
-    render(){
+   render(){
         //console.log(this.state.users)
         return(
             <div>
@@ -38,7 +36,21 @@ const mapStateToProps = (state)=>{
 
 export default connect(mapStateToProps)(UsersList)
 
- // constructor(){
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// constructor(){
     //     super()
     //     this.state ={
     //         users :[]

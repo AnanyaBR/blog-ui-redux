@@ -5,6 +5,7 @@ import configureStore from './store/configuresStore'
 import {Provider} from 'react-redux'
 import { startGetUsers } from './actions/usersAction'
 import {startGetPosts} from './actions/postsAction'
+import {startGetComments} from './actions/commentsAction'
 
 
 const store = configureStore()
@@ -18,6 +19,7 @@ store.subscribe(()=>{
 //handle page reloads
 store.dispatch(startGetUsers())
 store.dispatch(startGetPosts())
+store.dispatch(startGetComments())
 
 const ele =(
     <Provider store={store}>
